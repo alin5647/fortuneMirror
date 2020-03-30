@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Roboto:ital,wght@1,700&display=swap');
+
+/* 
+CSS rules to specify familes:
+font-family: 'Cairo', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+}
+
+
+.home-page {
+    height: 100vh;
+}
+
+nav {
+    height: 10vh;
+}
+
+.banner {
+    height: 59vh;
+}
+
+.category-panel {
+    height: 31vh;
+}
+
+.nav-link {
+    font-size: 18px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    transition: color 0.3s;
+}
+
+.active {
+    color: rgb(0, 207, 35);
+}
+
+.nav-link:hover {
+    color: red;
+}
+
+.nav-link:active {
+    color: rgb(0, 207, 35);
+}
+
+.navbar-brand {
+    font-family: 'Cairo', sans-serif;;
+    font-size: 40px;
+}
+
+.company-logo {
+    filter: none;
+    transition: filter 1s;
+}
+
+.company-logo:hover {
+    filter: hue-rotate(304deg) invert(1) saturate(3);
+}
+
+#company-year {
+    font-size: 20px;
+}
+
+#company {
+    color: transparent;
+    transition: color 0.5s;
+}
+
+#company-name {
+    color: black;
+}
+
+#company:hover {
+    color: red;
+    
+}
+
+#contact-link {
+    color: red;
+}
+
+#contact-link:hover {
+    color: rgb(0, 207, 35);
+}
+
+#contact-link:active {
+    color: rgb(0, 162, 255);
+}
+
+#banner-list {
+    font-family: 'Cairo', sans-serif;
+    list-style-type: none;
+}
+
+.banner-title {
+    font-size: 3.2vw;
+}
+
+.banner svg {
+    color: white;
+    transition: color 0.5s;
+}
+
+.banner li:hover svg{
+    color: rgb(0, 207, 35);
+    
+}
+
+.category-panel {
+    font-family: 'Cairo', sans-serif;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 8%, rgba(142,142,142,1) 41%, rgba(83,83,83,1) 59%, rgba(0,0,0,1) 87%);
+}
+
+.category-panel .card {
+    border: none;
+    color: black;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.category-panel .card img {
+    background: linear-gradient(0deg, rgba(10,11,27,1) 0%, rgba(255,255,255,1) 0%, rgba(82,82,82,1) 100%);
+    border-radius: 0;
+}
+
+.card-body {
+    background-color: rgba(255, 255, 255, 0);
+    padding: 0;
+    padding-top: 8px;
+    text-align: center;
+    font-family: 'Cairo', sans-serif;
+    color: white;
+    transition: color 0.2s;
+}
+
+.card:hover .card-body {
+    color: red;
+}
+
+.card {
+    transition: box-shadow 0.3s;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 30px white;
+}
+
+
+/* Product Page CSS */
+.product-page {
+    height: 100vh;
+}
+
+.product-page .container-fluid .main {
+    height: 90vh;
+}
+
+.product-nav {
+    min-height: 90vh;
+    border-right: solid 1px grey;
+}
+
+.side-nav-descriptor {
+    font-family: 'Cairo', sans-serif;
+    border-bottom: solid 1px grey;
+}
+
+.product-nav .nav-link {
+    padding-left: 1.5vw;
+    border-radius: 0;
+    padding-top: 1.2vh;
+    border-bottom: solid 1px grey;
+    color: white;
+    font-family: 'Cairo', sans-serif;
+}
+
+.tab-content {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.822);
+}
+
+.tab-category-name {
+    font-family: 'Cairo', sans-serif;
+    color: white;
+    font-size: 2.0em;
+}
+
+.product-page .card {
+    background-color: #5a5a5a;
+}
+
+
+
