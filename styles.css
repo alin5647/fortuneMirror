@@ -6,6 +6,11 @@ font-family: 'Cairo', sans-serif;
 font-family: 'Roboto', sans-serif;
 */
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
     position: relative;
 }
@@ -37,10 +42,6 @@ body {
     color: black;
     font-family: 'Roboto', sans-serif;
     transition: color 0.3s;
-}
-
-.active {
-    color: rgb(0, 207, 35);
 }
 
 .nav-link:hover {
@@ -155,6 +156,10 @@ body {
 
 
 /* Product Page CSS */
+.product-body {
+    position: relative;
+}
+
 .product-page {
     height: 100vh;
 }
@@ -205,8 +210,9 @@ body {
 }
 
 .anchor-offset {
-    position: relative;
-    top: -10vh;
+    margin-top: -10vh;
+    padding-top: 10vh;
+    display: inline-block;
 }
 
 .category-descriptor {
