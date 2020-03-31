@@ -18,7 +18,7 @@
 </head>
 
 
-<body>
+<body data-spy="scroll" data-target=".side-nav-bar">
 
     <!-- Optional JavaScript -->
 
@@ -37,7 +37,7 @@
     <section class="product-page">
         <a id="home"></a>
         <!--Navigation-->
-        <nav class="navbar navbar-expand-md bg-light border-bottom border-dark">
+        <nav class="navbar top-nav navbar-expand-md bg-light border-bottom border-dark">
             <a class="navbar-brand ml-3" href="index.html">
                 <img class="company-logo" src="https://i.ibb.co/7vWJSBQ/logo.png" width="70" height="60"
                     class="d-incline-block align-top mr-2" alt="Fortune Mirror logo">
@@ -73,879 +73,980 @@
         <!-- Product Page Body -->
         <div class="container-fluid main">
             <div class="row">
-                <div class="product-nav bg-dark text-light col-2 px-0">
-                    <!-- Main category nav -->
-                    <div class="side-nav-descriptor pl-4 py-3">
-                        <h3>Main Categories</h3>
-                    </div>
-                    <div class="nav flex-column nav-pills justify-content-center" id="v-pills-tab" role="tablist"
-                        aria-orientation="vertical">
-                        <a class="nav-link active" id="v-pills-category1-tab" data-toggle="pill" href="#v-pills-category1"
-                            role="tab" aria-controls="v-pills-category1" aria-selected="true">Category Name</a>
-                        <a class="nav-link" id="v-pills-category2-tab" data-toggle="pill" href="#v-pills-category2"
-                            role="tab" aria-controls="v-pills-profile" aria-selected="false">Category Name Long List</a>
-                        <a class="nav-link" id="v-pills-category3-tab" data-toggle="pill" href="#v-pills-category3"
-                            role="tab" aria-controls="v-pills-profile" aria-selected="false">Category Name</a>
-                        <a class="nav-link" id="v-pills-category4-tab" data-toggle="pill" href="#v-pills-category4"
-                            role="tab" aria-controls="v-pills-profile" aria-selected="false">Category Name</a>
-                        <a class="nav-link" id="v-pills-category5-tab" data-toggle="pill" href="#v-pills-category5"
-                            role="tab" aria-controls="v-pills-profile" aria-selected="false">Category Name</a>
-                        <a class="nav-link" id="v-pills-category6-tab" data-toggle="pill" href="#v-pills-category6"
-                            role="tab" aria-controls="v-pills-profile" aria-selected="false">Category Name</a>
-                        <a class="nav-link" id="v-pills-category7-tab" data-toggle="pill" href="#v-pills-category7"
-                            role="tab" aria-controls="v-pills-profile" aria-selected="false">Category Name</a>
-                        <a class="nav-link" id="v-pills-category8-tab" data-toggle="pill" href="#v-pills-category8"
-                            role="tab" aria-controls="v-pills-profile" aria-selected="false">Category Name</a>
-                        <a class="nav-link" id="v-pills-category9-tab" data-toggle="pill" href="#v-pills-category9"
-                            role="tab" aria-controls="v-pills-profile" aria-selected="false">Category Name</a>
-                        <a class="nav-link" id="v-pills-category10-tab" data-toggle="pill" href="#v-pills-category10"
-                            role="tab" aria-controls="v-pills-profile" aria-selected="false">Category Name</a>
-                        <a class="nav-link" id="v-pills-category11-tab" data-toggle="pill" href="#v-pills-category11"
-                            role="tab" aria-controls="v-pills-profile" aria-selected="false">Category Name</a>
-                        <a class="nav-link" id="v-pills-category12-tab" data-toggle="pill" href="#v-pills-category12"
-                            role="tab" aria-controls="v-pills-profile" aria-selected="false">Category Name</a>
-
+                <div class="col-2 side-nav bg-dark px-0">
+                    <div class="side-nav-wrapper">
+                        <div class="side-nav-descriptor pl-4 py-3">
+                            <h2>Main Categories</h2>
+                        </div>
+                        <nav class="nav side-nav-bar flex-column justify-content-center">
+                            <a class="nav-link active" href="#category1">Category 1</a>
+                            <a class="nav-link" href="#category2">Category 2</a>
+                            <a class="nav-link" href="#category3">Category 3</a>
+                            <a class="nav-link" href="#category4">Category 4</a>
+                            <a class="nav-link" href="#category5">Category 5</a>
+                            <a class="nav-link" href="#category6">Category 6</a>
+                            <a class="nav-link" href="#category7">Category 7</a>
+                            <a class="nav-link" href="#category8">Category 8</a>
+                            <a class="nav-link" href="#category9">Category 9</a>
+                            <a class="nav-link" href="#category10">Category 10</a>
+                            <a class="nav-link" href="#category11">Category 11</a>
+                            <a class="nav-link" href="#category12">Category 12</a>
+                        </nav>
                     </div>
                 </div>
                 <div class="col-10 px-0">
-                    <!-- Category Products -->
-                    <div class="tab-content" id="v-pills-tabContent">
-                        <div class="tab-pane fade show active px-5" id="v-pills-category1" role="tabpanel"
-                            aria-labelledby="v-pills-category1-tab">
-                            <div class="tab-category-name pl-3 pt-2">
-                                <span>Category Name</span>
-                            </div>
-                            <div class="container-fluid pt-3">
-                                <div class="row row-cols-1 row-cols-md-4">
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                    <div class="grid-wrapper px-5">
+                        <a class="anchor-offset" id="category1"></a>
+                        <div class="category-descriptor py-3">
+                            <h1>Category Name</h1>
+                        </div>
+                        <div class="container-fluid">
+                            <div class="row row-cols-1 row-cols-md-4">
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade px-5" id="v-pills-category2" role="tabpanel"
-                            aria-labelledby="v-pills-category2-tab">
-                            <div class="tab-category-name pl-3 pt-2">
-                                <span>Category Name</span>
-                            </div>
-                            <div class="container-fluid pt-3">
-                                <div class="row row-cols-1 row-cols-md-4">
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/201904161259582uzk21.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                    </div>
+                    <div class="grid-wrapper px-5">
+                        <a class="anchor-offset" id="category2"></a>
+                        <div class="category-descriptor py-3">
+                            <h1>Long Category Example</h1>
+                        </div>
+                        <div class="container-fluid">
+                            <div class="row row-cols-1 row-cols-md-4">
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/201904161259582uzk21.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/201904161259582uzk21.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/201904161259582uzk21.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/201904161259582uzk21.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/201904161259582uzk21.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/201904161259582uzk21.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/201904161259582uzk21.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/201904161259582uzk21.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/201904161259582uzk21.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/201904161259582uzk21.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/201904161259582uzk21.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/201904161259582uzk21.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/201904161259582uzk21.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/201904161259582uzk21.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/201904161259582uzk21.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
+                                    </div>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
+                                        </div>
+                                        <a href="#" class="stretched-link"></a>
+                                    </div>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
+                                        </div>
+                                        <a href="#" class="stretched-link"></a>
+                                    </div>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
+                                        </div>
+                                        <a href="#" class="stretched-link"></a>
+                                    </div>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
+                                        </div>
+                                        <a href="#" class="stretched-link"></a>
+                                    </div>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
+                                        </div>
+                                        <a href="#" class="stretched-link"></a>
+                                    </div>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
+                                        </div>
+                                        <a href="#" class="stretched-link"></a>
+                                    </div>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
+                                        </div>
+                                        <a href="#" class="stretched-link"></a>
+                                    </div>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
+                                        </div>
+                                        <a href="#" class="stretched-link"></a>
+                                    </div>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
+                                        </div>
+                                        <a href="#" class="stretched-link"></a>
+                                    </div>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
+                                        </div>
+                                        <a href="#" class="stretched-link"></a>
+                                    </div>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
+                                        </div>
+                                        <a href="#" class="stretched-link"></a>
+                                    </div>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
+                                        </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade px-5" id="v-pills-category3" role="tabpanel"
-                            aria-labelledby="v-pills-category3-tab">
-                            <div class="tab-category-name pl-3 pt-2">
-                                <span>Category Name</span>
-                            </div>
-                            <div class="container-fluid pt-3">
-                                <div class="row row-cols-1 row-cols-md-4">
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
-                                        </div>
-                                    </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
-                                        </div>
-                                    </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
-                                        </div>
-                                    </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
-                                        </div>
-                                    </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                            </div>
+                    </div>
+                    <div class="grid-wrapper px-5">
+                        <a class="anchor-offset" id="category3"></a>
+                        <div class="category-descriptor py-3">
+                            <h1>Category Name</h1>
                         </div>
-                        <div class="tab-pane fade px-5" id="v-pills-category4" role="tabpanel"
-                            aria-labelledby="v-pills-category4-tab">
-                            <div class="tab-category-name pl-3 pt-2">
-                                <span>Category Name</span>
-                            </div>
-                            <div class="container-fluid pt-3">
-                                <div class="row row-cols-1 row-cols-md-4">
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/201904161259582uzk21.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                        <div class="container-fluid">
+                            <div class="row row-cols-1 row-cols-md-4">
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/201904161259582uzk21.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/201904161259582uzk21.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/201904161259582uzk21.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/201904161259582uzk21.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade px-5" id="v-pills-category5" role="tabpanel"
-                            aria-labelledby="v-pills-category5-tab">
-                            <div class="tab-category-name pl-3 pt-2">
-                                <span>Category Name</span>
-                            </div>
-                            <div class="container-fluid pt-3">
-                                <div class="row row-cols-1 row-cols-md-4">
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                    </div>
+                    <div class="grid-wrapper px-5">
+                        <a class="anchor-offset" id="category4"></a>
+                        <div class="category-descriptor py-3">
+                            <h1>Category Name</h1>
+                        </div>
+                        <div class="container-fluid">
+                            <div class="row row-cols-1 row-cols-md-4">
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade px-5" id="v-pills-category6" role="tabpanel"
-                            aria-labelledby="v-pills-category6-tab">
-                            <div class="tab-category-name pl-3 pt-2">
-                                <span>Category Name</span>
-                            </div>
-                            <div class="container-fluid pt-3">
-                                <div class="row row-cols-1 row-cols-md-4">
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/201904161259582uzk21.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                    </div>
+                    <div class="grid-wrapper px-5">
+                        <a class="anchor-offset" id="category5"></a>
+                        <div class="category-descriptor py-3">
+                            <h1>Category Name</h1>
+                        </div>
+                        <div class="container-fluid">
+                            <div class="row row-cols-1 row-cols-md-4">
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/201904161259582uzk21.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/201904161259582uzk21.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/201904161259582uzk21.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/201904161259582uzk21.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade px-5" id="v-pills-category7" role="tabpanel"
-                            aria-labelledby="v-pills-category7-tab">
-                            <div class="tab-category-name pl-3 pt-2">
-                                <span>Category Name</span>
-                            </div>
-                            <div class="container-fluid pt-3">
-                                <div class="row row-cols-1 row-cols-md-4">
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                    </div>
+                    <div class="grid-wrapper px-5">
+                        <a class="anchor-offset" id="category6"></a>
+                        <div class="category-descriptor py-3">
+                            <h1>Category Name</h1>
+                        </div>
+                        <div class="container-fluid">
+                            <div class="row row-cols-1 row-cols-md-4">
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade px-5" id="v-pills-category8" role="tabpanel"
-                            aria-labelledby="v-pills-category8-tab">
-                            <div class="tab-category-name pl-3 pt-2">
-                                <span>Category Name</span>
-                            </div>
-                            <div class="container-fluid pt-3">
-                                <div class="row row-cols-1 row-cols-md-4">
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/201904161259582uzk21.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                    </div>
+                    <div class="grid-wrapper px-5">
+                        <a class="anchor-offset" id="category7"></a>
+                        <div class="category-descriptor py-3">
+                            <h1>Category Name</h1>
+                        </div>
+                        <div class="container-fluid">
+                            <div class="row row-cols-1 row-cols-md-4">
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/201904161259582uzk21.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/201904161259582uzk21.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/201904161259582uzk21.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/201904161259582uzk21.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade px-5" id="v-pills-category9" role="tabpanel"
-                            aria-labelledby="v-pills-category9-tab">
-                            <div class="tab-category-name pl-3 pt-2">
-                                <span>Category Name</span>
-                            </div>
-                            <div class="container-fluid pt-3">
-                                <div class="row row-cols-1 row-cols-md-4">
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                    </div>
+                    <div class="grid-wrapper px-5">
+                        <a class="anchor-offset" id="category8"></a>
+                        <div class="category-descriptor py-3">
+                            <h1>Category Name</h1>
+                        </div>
+                        <div class="container-fluid">
+                            <div class="row row-cols-1 row-cols-md-4">
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade px-5" id="v-pills-category10" role="tabpanel"
-                            aria-labelledby="v-pills-category10-tab">
-                            <div class="tab-category-name pl-3 pt-2">
-                                <span>Category Name</span>
-                            </div>
-                            <div class="container-fluid pt-3">
-                                <div class="row row-cols-1 row-cols-md-4">
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/201904161259582uzk21.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                    </div>
+                    <div class="grid-wrapper px-5">
+                        <a class="anchor-offset" id="category9"></a>
+                        <div class="category-descriptor py-3">
+                            <h1>Category Name</h1>
+                        </div>
+                        <div class="container-fluid">
+                            <div class="row row-cols-1 row-cols-md-4">
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/201904161259582uzk21.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/201904161259582uzk21.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/201904161259582uzk21.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/201904161259582uzk21.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade px-5" id="v-pills-category11" role="tabpanel"
-                            aria-labelledby="v-pills-category11-tab">
-                            <div class="tab-category-name pl-3 pt-2">
-                                <span>Category Name</span>
-                            </div>
-                            <div class="container-fluid pt-3">
-                                <div class="row row-cols-1 row-cols-md-4">
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                    </div>
+                    <div class="grid-wrapper px-5">
+                        <a class="anchor-offset" id="category10"></a>
+                        <div class="category-descriptor py-3">
+                            <h1>Category Name</h1>
+                        </div>
+                        <div class="container-fluid">
+                            <div class="row row-cols-1 row-cols-md-4">
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade px-5" id="v-pills-category12" role="tabpanel"
-                            aria-labelledby="v-pills-category12-tab">
-                            <div class="tab-category-name pl-3 pt-2">
-                                <span>Category Name</span>
-                            </div>
-                            <div class="container-fluid pt-3">
-                                <div class="row row-cols-1 row-cols-md-4">
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/201904161259582uzk21.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                    </div>
+                    <div class="grid-wrapper px-5">
+                        <a class="anchor-offset" id="category11"></a>
+                        <div class="category-descriptor py-3">
+                            <h1>Category Name</h1>
+                        </div>
+                        <div class="container-fluid">
+                            <div class="row row-cols-1 row-cols-md-4">
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/201904161259582uzk21.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/201904161259582uzk21.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/201904161259582uzk21.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
-                                    <div class="col mb-4">
-                                        <div class="card">
-                                            <img src="https://www.fmaward.com/upload/201904161259582uzk21.jpg"
-                                                class="card-img-top" alt="image-placeholder">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Name Placeholder</h5>
-                                            </div>
-                                            <a href="#" class="stretched-link"></a>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
                                         </div>
+                                        <a href="#" class="stretched-link"></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
+                    </div>
+                    <div class="grid-wrapper px-5">
+                        <a class="anchor-offset" id="category12"></a>
+                        <div class="category-descriptor py-3">
+                            <h1>Category Name</h1>
+                        </div>
+                        <div class="container-fluid">
+                            <div class="row row-cols-1 row-cols-md-4">
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
+                                        </div>
+                                        <a href="#" class="stretched-link"></a>
+                                    </div>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
+                                        </div>
+                                        <a href="#" class="stretched-link"></a>
+                                    </div>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
+                                        </div>
+                                        <a href="#" class="stretched-link"></a>
+                                    </div>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
+                                        </div>
+                                        <a href="#" class="stretched-link"></a>
+                                    </div>
+                                </div>
+                                <div class="col mb-4">
+                                    <div class="card">
+                                        <img src="https://www.fmaward.com/upload/20190416140413gugof1.jpg"
+                                            class="card-img-top" alt="image-placeholder">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Name Placeholder</h5>
+                                        </div>
+                                        <a href="#" class="stretched-link"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 </body>
 

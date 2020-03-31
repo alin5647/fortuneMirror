@@ -22,10 +22,10 @@
 
     <!-- Optional JavaScript -->
 
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
@@ -37,7 +37,7 @@
     <section class="home-page">
         <a id="home"></a>
         <!--Navigation-->
-        <nav class="navbar navbar-expand-md bg-light border-bottom border-dark">
+        <nav class="navbar top-nav navbar-expand-md bg-light border-bottom border-dark">
             <a class="navbar-brand ml-3" href="#home">
                 <img class="company-logo" src="https://i.ibb.co/7vWJSBQ/logo.png" width="70" height="60"
                     class="d-incline-block align-top mr-2" alt="Fortune Mirror logo">
@@ -70,158 +70,184 @@
             </div>
         </nav>
 
-        <!-- Banner -->
-        <div class="banner container-fluid text-light pl-0">
-            <div class="row">
-                <div class="banner-image pr-0 col-md-8">
-                    <img src="https://i.imgur.com/TXfBuH0.png" class="img-fluid" alt="Product banner">
-                </div>
-                <div class="banner-text bg-dark col-md-4 d-flex justify-content-center align-items-center">
-                    <ul id="banner-list">
-                        <li class="banner-title border-bottom container">
-                            <div class="row pb-4">
-                                <div class="col-md-2 d-flex align-items-center">
-                                    <svg class="bi bi-check" width="1em" height="1em" viewBox="0 0 16 16"
-                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                            d="M13.854 3.646a.5.5 0 010 .708l-7 7a.5.5 0 01-.708 0l-3.5-3.5a.5.5 0 11.708-.708L6.5 10.293l6.646-6.647a.5.5 0 01.708 0z"
-                                            clip-rule="evenodd" />
-                                    </svg>
+        <div class="content-wrapper">
+            <!-- Banner -->
+            <div class="banner container-fluid text-light pl-0">
+                <div class="row">
+                    <div class="banner-image pr-0 col-md-8">
+                        <img src="https://i.imgur.com/TXfBuH0.png" class="img-fluid" alt="Product banner">
+                    </div>
+                    <div class="banner-text bg-dark col-md-4 d-flex justify-content-center align-items-center">
+                        <ul id="banner-list">
+                            <li class="banner-title border-bottom container">
+                                <div class="row pb-4">
+                                    <div class="col-md-2 d-flex align-items-center">
+                                        <svg class="bi bi-check" width="1em" height="1em" viewBox="0 0 16 16"
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M13.854 3.646a.5.5 0 010 .708l-7 7a.5.5 0 01-.708 0l-3.5-3.5a.5.5 0 11.708-.708L6.5 10.293l6.646-6.647a.5.5 0 01.708 0z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </div>
+                                    <div class="col-md-9">
+                                        FINE CRAFT
+                                    </div>
                                 </div>
-                                <div class="col-md-9">
-                                    FINE CRAFT
+                            </li>
+                            <li class="banner-title border-bottom container">
+                                <div class="row py-4">
+                                    <div class="col-md-2 d-flex align-items-center">
+                                        <svg class="bi bi-check" width="1em" height="1em" viewBox="0 0 16 16"
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M13.854 3.646a.5.5 0 010 .708l-7 7a.5.5 0 01-.708 0l-3.5-3.5a.5.5 0 11.708-.708L6.5 10.293l6.646-6.647a.5.5 0 01.708 0z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </div>
+                                    <div class="col-md-2">
+                                        PROFESSIONAL QUALITY
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="banner-title border-bottom container">
-                            <div class="row py-4">
-                                <div class="col-md-2 d-flex align-items-center">
-                                    <svg class="bi bi-check" width="1em" height="1em" viewBox="0 0 16 16"
-                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                            d="M13.854 3.646a.5.5 0 010 .708l-7 7a.5.5 0 01-.708 0l-3.5-3.5a.5.5 0 11.708-.708L6.5 10.293l6.646-6.647a.5.5 0 01.708 0z"
-                                            clip-rule="evenodd" />
-                                    </svg>
+                            </li>
+                            <li class="banner-title container">
+                                <div class="row pt-4">
+                                    <div class="col-md-2 d-flex align-items-center">
+                                        <svg class="bi bi-check" width="1em" height="1em" viewBox="0 0 16 16"
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M13.854 3.646a.5.5 0 010 .708l-7 7a.5.5 0 01-.708 0l-3.5-3.5a.5.5 0 11.708-.708L6.5 10.293l6.646-6.647a.5.5 0 01.708 0z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </div>
+                                    <div class="col-md-9">
+                                        EXQUISITE BEAUTY
+                                    </div>
                                 </div>
-                                <div class="col-md-2">
-                                    PROFESSIONAL QUALITY
-                                </div>
-                            </div>
-                        </li>
-                        <li class="banner-title container">
-                            <div class="row pt-4">
-                                <div class="col-md-2 d-flex align-items-center">
-                                    <svg class="bi bi-check" width="1em" height="1em" viewBox="0 0 16 16"
-                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                            d="M13.854 3.646a.5.5 0 010 .708l-7 7a.5.5 0 01-.708 0l-3.5-3.5a.5.5 0 11.708-.708L6.5 10.293l6.646-6.647a.5.5 0 01.708 0z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-                                </div>
-                                <div class="col-md-9">
-                                    EXQUISITE BEAUTY
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- List of category images -->
-        <!-- HOW TO ADD/REPLACE IMAGES:
+            <!-- List of category images -->
+            <!-- HOW TO ADD/REPLACE IMAGES:
                     1. Locate tags <img ... >
                     2. Locate parameter src="/path/to/file.img"
                     3. Insert url or local filepath to image in between the quotes (src="/path/to/file.img")-->
 
-        <div class="category-panel text-uppercase d-flex flex-column justify-content-center">
-            <div class="d-flex justify-content-center pb-3">
-                <h1>Main Categories</h1>
-            </div>
-            <div class="card-deck mx-2 pt-4">
-                <div class="card">
-                    <img class="card-img-top" src="https://raw.githubusercontent.com/alin5647/fortuneMirror/master/img/doublePlaque.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Awards</h5>
-                    </div>
-                    <a href="#" class="stretched-link"></a>
+            <div class="category-panel text-uppercase d-flex flex-column justify-content-center">
+                <div class="d-flex justify-content-center pb-3">
+                    <h1>Main Categories</h1>
                 </div>
-                <div class="card">
-                    <img class="card-img-top" src="https://raw.githubusercontent.com/alin5647/fortuneMirror/master/img/frame.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Frames</h5>
+                <div class="card-deck mx-2 pt-4">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://raw.githubusercontent.com/alin5647/fortuneMirror/master/img/doublePlaque.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Awards</h5>
+                        </div>
+                        <a href="#" class="stretched-link"></a>
                     </div>
-                    <a href="#" class="stretched-link"></a>
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src="https://raw.githubusercontent.com/alin5647/fortuneMirror/master/img/miterFlatAward.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Flat Plane</h5>
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://raw.githubusercontent.com/alin5647/fortuneMirror/master/img/frame.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Frames</h5>
+                        </div>
+                        <a href="#" class="stretched-link"></a>
                     </div>
-                    <a href="#" class="stretched-link"></a>
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src="https://raw.githubusercontent.com/alin5647/fortuneMirror/master/img/ogeeCrescentJade.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Crescents</h5>
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://raw.githubusercontent.com/alin5647/fortuneMirror/master/img/miterFlatAward.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Flat Plane</h5>
+                        </div>
+                        <a href="#" class="stretched-link"></a>
                     </div>
-                    <a href="#" class="stretched-link"></a>
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src="https://raw.githubusercontent.com/alin5647/fortuneMirror/master/img/pins.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Parts</h5>
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://raw.githubusercontent.com/alin5647/fortuneMirror/master/img/ogeeCrescentJade.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Crescents</h5>
+                        </div>
+                        <a href="#" class="stretched-link"></a>
                     </div>
-                    <a href="#" class="stretched-link"></a>
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src="https://raw.githubusercontent.com/alin5647/fortuneMirror/master/img/plaque.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Plaques</h5>
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://raw.githubusercontent.com/alin5647/fortuneMirror/master/img/pins.png"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Parts</h5>
+                        </div>
+                        <a href="#" class="stretched-link"></a>
                     </div>
-                    <a href="#" class="stretched-link"></a>
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src="https://raw.githubusercontent.com/alin5647/fortuneMirror/master/img/squareGlass.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Standing</h5>
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://raw.githubusercontent.com/alin5647/fortuneMirror/master/img/plaque.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Plaques</h5>
+                        </div>
+                        <a href="#" class="stretched-link"></a>
                     </div>
-                    <a href="#" class="stretched-link"></a>
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src="https://raw.githubusercontent.com/alin5647/fortuneMirror/master/img/miterFlatAward.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Miter Cut</h5>
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://raw.githubusercontent.com/alin5647/fortuneMirror/master/img/squareGlass.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Standing</h5>
+                        </div>
+                        <a href="#" class="stretched-link"></a>
                     </div>
-                    <a href="#" class="stretched-link"></a>
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src="https://raw.githubusercontent.com/alin5647/fortuneMirror/master/img/miterFlatAward.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Miter Cut</h5>
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://raw.githubusercontent.com/alin5647/fortuneMirror/master/img/miterFlatAward.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Miter Cut</h5>
+                        </div>
+                        <a href="#" class="stretched-link"></a>
                     </div>
-                    <a href="#" class="stretched-link"></a>
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src="https://raw.githubusercontent.com/alin5647/fortuneMirror/master/img/miterFlatAward.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Miter Cut</h5>
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://raw.githubusercontent.com/alin5647/fortuneMirror/master/img/miterFlatAward.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Miter Cut</h5>
+                        </div>
+                        <a href="#" class="stretched-link"></a>
                     </div>
-                    <a href="#" class="stretched-link"></a>
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src="https://raw.githubusercontent.com/alin5647/fortuneMirror/master/img/miterFlatAward.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Miter Cut</h5>
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://raw.githubusercontent.com/alin5647/fortuneMirror/master/img/miterFlatAward.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Miter Cut</h5>
+                        </div>
+                        <a href="#" class="stretched-link"></a>
                     </div>
-                    <a href="#" class="stretched-link"></a>
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src="https://raw.githubusercontent.com/alin5647/fortuneMirror/master/img/miterFlatAward.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Miter Cut</h5>
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://raw.githubusercontent.com/alin5647/fortuneMirror/master/img/miterFlatAward.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Miter Cut</h5>
+                        </div>
+                        <a href="#" class="stretched-link"></a>
                     </div>
-                    <a href="#" class="stretched-link"></a>
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://raw.githubusercontent.com/alin5647/fortuneMirror/master/img/miterFlatAward.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Miter Cut</h5>
+                        </div>
+                        <a href="#" class="stretched-link"></a>
+                    </div>
                 </div>
             </div>
         </div>
