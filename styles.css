@@ -6,11 +6,6 @@ font-family: 'Cairo', sans-serif;
 font-family: 'Roboto', sans-serif;
 */
 
-html {
-    scroll-behavior: smooth;
-}
-
-
 body {
     position: relative;
 }
@@ -164,7 +159,7 @@ body {
     height: 100vh;
 }
 
-.main {
+.top-offset {
     position: relative;
     top: 10vh;
 }
@@ -210,6 +205,7 @@ body {
 }
 
 .anchor-offset {
+    width: 100%;
     margin-top: -10vh;
     padding-top: 10vh;
     display: inline-block;
@@ -225,3 +221,25 @@ body {
     background-color: #5a5a5a;
 }
 
+
+/* Product Detail CSS */
+.product-detail-body {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-detail-page {
+    height: 100vh;
+}
+
+.detail-wrapper {
+    height: 90vh;
+}
+
+.product-name {
+    height: 5vh;
+}
+
+.gallery {
+    height: 85vh;
+}
