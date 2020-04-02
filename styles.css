@@ -10,7 +10,6 @@ body {
     position: relative;
 }
 
-
 .home-page {
     height: 100vh;
 }
@@ -25,11 +24,15 @@ body {
 }
 
 .banner {
-    height: 59vh;
+    height: 55vh;
+}
+
+.banner-image img {
+    height: 55vh;
 }
 
 .category-panel {
-    height: 31vh;
+    min-height: 35vh;
 }
 
 .nav-link {
@@ -97,7 +100,8 @@ body {
 }
 
 .banner-title {
-    font-size: 3.2vw;
+    font-size: 5.5vh;
+    padding-left: 3vw;
 }
 
 .banner svg {
