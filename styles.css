@@ -275,6 +275,11 @@ body {
     height: 55vh;
 }
 
+.expandedImg-container img {
+    max-height: 55vh;
+    width: 100%;
+}
+
 .otherImg-container {
     height: 30vh;
     position: relative;
