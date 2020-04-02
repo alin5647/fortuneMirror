@@ -133,12 +133,12 @@ body {
     padding-top: 8px;
     text-align: center;
     font-family: 'Cairo', sans-serif;
-    color: white;
+    color: rgb(255,255,255,0.5);
     transition: color 0.2s;
 }
 
 .card:hover .card-body {
-    color: red;
+    color: rgb(255,255,255,1);
 }
 
 .card {
@@ -171,6 +171,10 @@ body {
     z-index: 3;
 }
 
+.top-nav .active {
+    color: rgb(0, 162, 255);
+}
+
 .side-nav {
     border-right: solid grey 1px;
     color: white;
@@ -189,13 +193,22 @@ body {
 }
 
 .side-nav .nav-link {
-    color: white;
+    color: rgb(255,255,255,0.5);
     font-family: 'Cairo', sans-serif;
     font-size: 1.2em;
     padding-left: 1.3vw;
     padding-bottom: 1.0vh;
     padding-top: 1.0vh;
     border-bottom: solid grey 1px;
+    transition: color 0.2;
+}
+
+.side-nav .nav-link:hover {
+    color: rgb(255,255,255,1);
+}
+
+.side-nav .active {
+    color: rgb(255,255,255,1);
 }
 
 
