@@ -241,13 +241,39 @@ body {
     height: 90vh;
 }
 
-.gallery {
-    height: 90vh;
+.detail-wrapper .col-6 {
     border-right: 1px solid rgb(223, 223, 223);
 }
 
+.gallery {
+    height: 90vh;
+}
+
+.back-to-product {
+    height: 5vh;
+    border-bottom: 1px solid rgb(223, 223, 223)
+}
+
+.back-to-product button {
+    color: rgb(255, 255, 255, 0.8);
+    font-family: 'Cairo', sans-serif;
+    font-size: 1.5em;
+    transition: color 0.2s;
+    background-color: transparent;
+    border: none;
+}
+
+.back-to-product button:hover {
+    color: rgb(255, 255, 255, 1)
+}
+
+.back-to-product button:active {
+    border: none;
+    outline: none;
+}
+
 .expandedImg-container {
-    height: 60vh;
+    height: 55vh;
 }
 
 .otherImg-container {

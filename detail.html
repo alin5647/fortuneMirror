@@ -15,6 +15,7 @@
     <link rel="stylesheet" type="text/scss" href="styles.scss">
     <link rel="preload" as="image" href="https://i.ibb.co/7vWJSBQ/logo.png"> <!-- Preloads the company logo -->
     <link rel="icon" href="https://i.ibb.co/7vWJSBQ/logo.png" type="image/png"> <!-- Favicon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 
@@ -66,11 +67,11 @@
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
-                    <li class="nav-item ml-3">
-                        <a class="nav-link" href="product.html">Products</a>
-                    </li>
                     <li class="nav-item ml-3 active">
-                        <a class="nav-link active" href="catalog.html">Catalog</a>
+                        <a class="nav-link active" href="product.html">Products</a>
+                    </li>
+                    <li class="nav-item ml-3">
+                        <a class="nav-link disabled" href="catalog.html">Catalog</a>
                     </li>
                     <li class="nav-item ml-3">
                         <a class="nav-link disabled" href="aboutUs.html">About Us</a>
@@ -82,12 +83,17 @@
         </nav>
 
         <!-- Detail Page Body -->
-            <!-- Each <a></a> wrapping is one product that will be linked and anchored by its id -->
+        <!-- Each <a></a> wrapping is one product that will be linked and anchored by its id -->
         <a class="product-anchor-offset" id="productExample1">
             <div class="detail-wrapper top-offset">
                 <div class="container-fluid px-0">
                     <div class="row mx-0">
                         <div class="col-6 px-0 bg-dark">
+                            <div class="back-to-product d-flex align-items-center pl-3">
+                                <button class="d-flex align-items-center pl-3" onclick="location.href='product.html'">
+                                    <span class="material-icons pr-2">arrow_back</span> Products
+                                </button>
+                            </div>
                             <div class="gallery">
                                 <!-- The expanding image container -->
                                 <div
@@ -144,47 +150,47 @@
                             </section>
                             <section class="product-table table-responsive pt-5">
                                 <table class="table table-dark table-striped table-hover">
-                                    <thead class="thead-light"> 
-                                      <tr>
-                                        <th scope="col">Item #</th>
-                                        <th scope="col">Thickness</th>
-                                        <th scope="col">Color</th>
-                                        <th scope="col">Sizes (L&times;W)</th>
-                                      </tr>
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th scope="col">Item #</th>
+                                            <th scope="col">Thickness</th>
+                                            <th scope="col">Color</th>
+                                            <th scope="col">Sizes (L&times;W)</th>
+                                        </tr>
                                     </thead>
                                     <tbody>
-                                      <tr>
-                                        <th scope="row">C5046</th>
-                                        <td>3/16"</td>
-                                        <td>Jade</td>
-                                        <td>6"&times;4"</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">C5057</th>
-                                        <td>3/16"</td>
-                                        <td>Jade</td>
-                                        <td>7"&times;5"</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">C5068</th>
-                                        <td>3/16"</td>
-                                        <td>Jade</td>
-                                        <td>8"&times;6"</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">C50710</th>
-                                        <td>3/16"</td>
-                                        <td>Jade</td>
-                                        <td>10"&times;7"</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">C50912</th>
-                                        <td>3/16"</td>
-                                        <td>Jade</td>
-                                        <td>12"&times;9"</td>
-                                      </tr>
+                                        <tr>
+                                            <th scope="row">C5046</th>
+                                            <td>3/16"</td>
+                                            <td>Jade</td>
+                                            <td>6"&times;4"</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">C5057</th>
+                                            <td>3/16"</td>
+                                            <td>Jade</td>
+                                            <td>7"&times;5"</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">C5068</th>
+                                            <td>3/16"</td>
+                                            <td>Jade</td>
+                                            <td>8"&times;6"</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">C50710</th>
+                                            <td>3/16"</td>
+                                            <td>Jade</td>
+                                            <td>10"&times;7"</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">C50912</th>
+                                            <td>3/16"</td>
+                                            <td>Jade</td>
+                                            <td>12"&times;9"</td>
+                                        </tr>
                                     </tbody>
-                                  </table>
+                                </table>
                             </section>
                         </div>
                     </div>
@@ -252,47 +258,47 @@
                             </section>
                             <section class="product-table table-responsive pt-5">
                                 <table class="table table-dark table-striped table-hover">
-                                    <thead class="thead-light"> 
-                                      <tr>
-                                        <th scope="col">Item #</th>
-                                        <th scope="col">Thickness</th>
-                                        <th scope="col">Color</th>
-                                        <th scope="col">Sizes (L&times;W)</th>
-                                      </tr>
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th scope="col">Item #</th>
+                                            <th scope="col">Thickness</th>
+                                            <th scope="col">Color</th>
+                                            <th scope="col">Sizes (L&times;W)</th>
+                                        </tr>
                                     </thead>
                                     <tbody>
-                                      <tr>
-                                        <th scope="row">C5046</th>
-                                        <td>3/16"</td>
-                                        <td>Jade</td>
-                                        <td>6"&times;4"</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">C5057</th>
-                                        <td>3/16"</td>
-                                        <td>Jade</td>
-                                        <td>7"&times;5"</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">C5068</th>
-                                        <td>3/16"</td>
-                                        <td>Jade</td>
-                                        <td>8"&times;6"</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">C50710</th>
-                                        <td>3/16"</td>
-                                        <td>Jade</td>
-                                        <td>10"&times;7"</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">C50912</th>
-                                        <td>3/16"</td>
-                                        <td>Jade</td>
-                                        <td>12"&times;9"</td>
-                                      </tr>
+                                        <tr>
+                                            <th scope="row">C5046</th>
+                                            <td>3/16"</td>
+                                            <td>Jade</td>
+                                            <td>6"&times;4"</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">C5057</th>
+                                            <td>3/16"</td>
+                                            <td>Jade</td>
+                                            <td>7"&times;5"</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">C5068</th>
+                                            <td>3/16"</td>
+                                            <td>Jade</td>
+                                            <td>8"&times;6"</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">C50710</th>
+                                            <td>3/16"</td>
+                                            <td>Jade</td>
+                                            <td>10"&times;7"</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">C50912</th>
+                                            <td>3/16"</td>
+                                            <td>Jade</td>
+                                            <td>12"&times;9"</td>
+                                        </tr>
                                     </tbody>
-                                  </table>
+                                </table>
                             </section>
                         </div>
                     </div>
@@ -360,47 +366,47 @@
                             </section>
                             <section class="product-table table-responsive pt-5">
                                 <table class="table table-dark table-striped table-hover">
-                                    <thead class="thead-light"> 
-                                      <tr>
-                                        <th scope="col">Item #</th>
-                                        <th scope="col">Thickness</th>
-                                        <th scope="col">Color</th>
-                                        <th scope="col">Sizes (L&times;W)</th>
-                                      </tr>
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th scope="col">Item #</th>
+                                            <th scope="col">Thickness</th>
+                                            <th scope="col">Color</th>
+                                            <th scope="col">Sizes (L&times;W)</th>
+                                        </tr>
                                     </thead>
                                     <tbody>
-                                      <tr>
-                                        <th scope="row">C5046</th>
-                                        <td>3/16"</td>
-                                        <td>Jade</td>
-                                        <td>6"&times;4"</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">C5057</th>
-                                        <td>3/16"</td>
-                                        <td>Jade</td>
-                                        <td>7"&times;5"</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">C5068</th>
-                                        <td>3/16"</td>
-                                        <td>Jade</td>
-                                        <td>8"&times;6"</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">C50710</th>
-                                        <td>3/16"</td>
-                                        <td>Jade</td>
-                                        <td>10"&times;7"</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">C50912</th>
-                                        <td>3/16"</td>
-                                        <td>Jade</td>
-                                        <td>12"&times;9"</td>
-                                      </tr>
+                                        <tr>
+                                            <th scope="row">C5046</th>
+                                            <td>3/16"</td>
+                                            <td>Jade</td>
+                                            <td>6"&times;4"</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">C5057</th>
+                                            <td>3/16"</td>
+                                            <td>Jade</td>
+                                            <td>7"&times;5"</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">C5068</th>
+                                            <td>3/16"</td>
+                                            <td>Jade</td>
+                                            <td>8"&times;6"</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">C50710</th>
+                                            <td>3/16"</td>
+                                            <td>Jade</td>
+                                            <td>10"&times;7"</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">C50912</th>
+                                            <td>3/16"</td>
+                                            <td>Jade</td>
+                                            <td>12"&times;9"</td>
+                                        </tr>
                                     </tbody>
-                                  </table>
+                                </table>
                             </section>
                         </div>
                     </div>
@@ -468,47 +474,47 @@
                             </section>
                             <section class="product-table table-responsive pt-5">
                                 <table class="table table-dark table-striped table-hover">
-                                    <thead class="thead-light"> 
-                                      <tr>
-                                        <th scope="col">Item #</th>
-                                        <th scope="col">Thickness</th>
-                                        <th scope="col">Color</th>
-                                        <th scope="col">Sizes (L&times;W)</th>
-                                      </tr>
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th scope="col">Item #</th>
+                                            <th scope="col">Thickness</th>
+                                            <th scope="col">Color</th>
+                                            <th scope="col">Sizes (L&times;W)</th>
+                                        </tr>
                                     </thead>
                                     <tbody>
-                                      <tr>
-                                        <th scope="row">C5046</th>
-                                        <td>3/16"</td>
-                                        <td>Jade</td>
-                                        <td>6"&times;4"</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">C5057</th>
-                                        <td>3/16"</td>
-                                        <td>Jade</td>
-                                        <td>7"&times;5"</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">C5068</th>
-                                        <td>3/16"</td>
-                                        <td>Jade</td>
-                                        <td>8"&times;6"</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">C50710</th>
-                                        <td>3/16"</td>
-                                        <td>Jade</td>
-                                        <td>10"&times;7"</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">C50912</th>
-                                        <td>3/16"</td>
-                                        <td>Jade</td>
-                                        <td>12"&times;9"</td>
-                                      </tr>
+                                        <tr>
+                                            <th scope="row">C5046</th>
+                                            <td>3/16"</td>
+                                            <td>Jade</td>
+                                            <td>6"&times;4"</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">C5057</th>
+                                            <td>3/16"</td>
+                                            <td>Jade</td>
+                                            <td>7"&times;5"</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">C5068</th>
+                                            <td>3/16"</td>
+                                            <td>Jade</td>
+                                            <td>8"&times;6"</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">C50710</th>
+                                            <td>3/16"</td>
+                                            <td>Jade</td>
+                                            <td>10"&times;7"</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">C50912</th>
+                                            <td>3/16"</td>
+                                            <td>Jade</td>
+                                            <td>12"&times;9"</td>
+                                        </tr>
                                     </tbody>
-                                  </table>
+                                </table>
                             </section>
                         </div>
                     </div>
@@ -576,47 +582,47 @@
                             </section>
                             <section class="product-table table-responsive pt-5">
                                 <table class="table table-dark table-striped table-hover">
-                                    <thead class="thead-light"> 
-                                      <tr>
-                                        <th scope="col">Item #</th>
-                                        <th scope="col">Thickness</th>
-                                        <th scope="col">Color</th>
-                                        <th scope="col">Sizes (L&times;W)</th>
-                                      </tr>
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th scope="col">Item #</th>
+                                            <th scope="col">Thickness</th>
+                                            <th scope="col">Color</th>
+                                            <th scope="col">Sizes (L&times;W)</th>
+                                        </tr>
                                     </thead>
                                     <tbody>
-                                      <tr>
-                                        <th scope="row">C5046</th>
-                                        <td>3/16"</td>
-                                        <td>Jade</td>
-                                        <td>6"&times;4"</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">C5057</th>
-                                        <td>3/16"</td>
-                                        <td>Jade</td>
-                                        <td>7"&times;5"</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">C5068</th>
-                                        <td>3/16"</td>
-                                        <td>Jade</td>
-                                        <td>8"&times;6"</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">C50710</th>
-                                        <td>3/16"</td>
-                                        <td>Jade</td>
-                                        <td>10"&times;7"</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">C50912</th>
-                                        <td>3/16"</td>
-                                        <td>Jade</td>
-                                        <td>12"&times;9"</td>
-                                      </tr>
+                                        <tr>
+                                            <th scope="row">C5046</th>
+                                            <td>3/16"</td>
+                                            <td>Jade</td>
+                                            <td>6"&times;4"</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">C5057</th>
+                                            <td>3/16"</td>
+                                            <td>Jade</td>
+                                            <td>7"&times;5"</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">C5068</th>
+                                            <td>3/16"</td>
+                                            <td>Jade</td>
+                                            <td>8"&times;6"</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">C50710</th>
+                                            <td>3/16"</td>
+                                            <td>Jade</td>
+                                            <td>10"&times;7"</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">C50912</th>
+                                            <td>3/16"</td>
+                                            <td>Jade</td>
+                                            <td>12"&times;9"</td>
+                                        </tr>
                                     </tbody>
-                                  </table>
+                                </table>
                             </section>
                         </div>
                     </div>
