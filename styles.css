@@ -207,17 +207,21 @@ body {
 .side-nav-descriptor {
     font-family: 'Cairo', sans-serif;
     border-bottom: solid grey 1px;
+    padding-left: 2.0vh;
 }
 
 .side-nav .nav-link {
     color: rgb(255,255,255,0.5);
     font-family: 'Cairo', sans-serif;
     font-size: 1.2em;
-    padding-left: 1.3vw;
     padding-bottom: 1.0vh;
     padding-top: 1.0vh;
     border-bottom: solid grey 1px;
     transition: color 0.2;
+}
+
+.side-nav-bar a {
+    padding-left: 2.0vh;
 }
 
 .side-nav .nav-link:hover {
@@ -236,8 +240,8 @@ body {
 
 .anchor-offset {
     width: 100%;
-    margin-top: -10vh;
-    padding-top: 10vh;
+    margin-top: -12vh;
+    padding-top: 12vh;
     display: inline-block;
 }
 
