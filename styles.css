@@ -232,14 +232,56 @@ body {
     height: 100vh;
 }
 
+.product-anchor-offset {
+    width: 100%;
+    display: inline-block;
+}
+
 .detail-wrapper {
     height: 90vh;
 }
 
-.product-name {
-    height: 5vh;
+.gallery {
+    height: 90vh;
+    border-right: 1px solid rgb(223, 223, 223);
 }
 
-.gallery {
-    height: 85vh;
+.expandedImg-container {
+    height: 60vh;
 }
+
+.otherImg-container {
+    height: 30vh;
+    position: relative;
+}
+
+.otherImg-container .row {
+    width: 100%;
+}
+
+.otherImgs {
+    border: solid rgb(223, 223, 223) 1px;
+}
+
+.detail-section {
+    background-color: rgba(0, 0, 0, 0.822);
+    color: white;
+}
+
+.product-name {
+    font-family: 'Cairo', sans-serif;
+}
+
+.description-title {
+    font-family: 'Cairo', sans-serif;
+}
+
+.product-description {
+    font-family: 'Cairo', sans-serif;
+    font-size: 1.13em;
+}
+
+.stretched-link {
+    z-index: 1;
+}
+
