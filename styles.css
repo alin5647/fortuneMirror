@@ -16,23 +16,33 @@ body {
 
 .content-wrapper {
     position: relative;
-    top: 10vh;
+    top: 12vh;
+    max-height: 88vh;
 }
 
 .top-nav {
-    height: 10vh;
+    min-height: 12vh;
 }
 
 .banner {
-    height: 55vh;
+    max-height: 55vh;
 }
 
 .banner-image img {
-    height: 55vh;
+    max-height: 55vh;
+}
+
+.banner-text {
+    max-height: 55vh;
 }
 
 .category-panel {
-    min-height: 35vh;
+    height: 33vh;
+}
+
+.category-panel .card {
+    max-width: 15vh;
+    padding: 0;
 }
 
 .nav-link {
@@ -128,7 +138,7 @@ body {
 
 .category-panel .card img {
     background: linear-gradient(0deg, rgba(10,11,27,1) 0%, rgba(255,255,255,1) 0%, rgba(82,82,82,1) 100%);
-    border-radius: 0;
+    border-radius: 8px;
 }
 
 .card-body {
@@ -139,6 +149,10 @@ body {
     font-family: 'Cairo', sans-serif;
     color: rgb(255,255,255,0.5);
     transition: color 0.2s;
+}
+
+.card-title {
+    font-size: 2.5vh;
 }
 
 .card:hover .card-body {
@@ -165,7 +179,7 @@ body {
 
 .top-offset {
     position: relative;
-    top: 10vh;
+    top: 12vh;
 }
 
 .top-nav {
@@ -187,7 +201,6 @@ body {
 
 .side-nav-wrapper {
     position: fixed;
-    top: 10vh;
     width: 16.666667%;
 }
 
