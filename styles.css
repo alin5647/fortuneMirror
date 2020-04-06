@@ -174,8 +174,6 @@ body {
     overflow: hidden;
 }
 
-
-
 .top-offset {
     position: relative;
     top: 12vh;
@@ -196,6 +194,21 @@ body {
     height: 88vh;
     overflow-x: auto;
     overflow-y: hidden;
+}
+
+.toast {
+    position: absolute;
+    bottom: 3vh;
+    left: 0.8vw;
+    color: black;
+    width: 15vw;
+}
+
+.keyDesign {
+    background-color: rgb(0,0,0,0.7);
+    padding: 0px 5px 1px 5px;
+    color: white;
+    border-radius: 4px;
 }
 
 .side-nav {
