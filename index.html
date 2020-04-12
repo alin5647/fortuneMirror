@@ -13,8 +13,8 @@
 
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" type="text/scss" href="styles.scss">
-    <link rel="preload" as="image" href="https://i.ibb.co/7vWJSBQ/logo.png"> <!-- Preloads the company logo -->
-    <link rel="icon" href="https://i.ibb.co/7vWJSBQ/logo.png" type="image/png"> <!-- Favicon -->
+    <link rel="preload" as="image" href="https://raw.githubusercontent.com/alin5647/fortuneMirror/master/img/greenLogoTransp.png"> <!-- Preloads the company logo -->
+    <link rel="icon" href="https://raw.githubusercontent.com/alin5647/fortuneMirror/master/img/greenLogoTransp.png" type="image/png"> <!-- Favicon -->
 </head>
 
 
@@ -37,13 +37,17 @@
         <a id="home"></a>
         <!--Navigation-->
         <nav class="navbar top-nav navbar-expand-md bg-light border-bottom border-dark">
-            <a class="navbar-brand ml-3" href="#home">
-                <img class="company-logo" src="https://raw.githubusercontent.com/alin5647/fortuneMirror/master/img/greenLogo.png" width="70" height="60"
-                    class="d-incline-block align-top mr-2" alt="Fortune Mirror logo">
-                <span id="company">
-                    <span id="company-name" class="border-left border-dark ml-2 pl-4">Fortune Mirror</span>
+            <a class="navbar-brand ml-3 d-flex" href="index.html">
+                <div class="leftMainNav pr-3 border-right border-dark">
+                    <img class="company-logo"
+                        src="https://raw.githubusercontent.com/alin5647/fortuneMirror/master/img/greenLogoTransp.png"
+                        width="80" height="67" class="d-incline-block align-top" alt="Fortune Mirror logo">
+                    <div class="regLogo">Since 1978 &reg;</div>
+                </div>
+                <div id="company" class="pl-2">
+                    <span id="company-name" class="ml-2">Fortune Mirror</span>
                     <span id="company-year" class="ml-1">Since 1978</span>
-                </span>
+                </div>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
