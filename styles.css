@@ -64,15 +64,6 @@ body {
     font-size: 40px;
 }
 
-.company-logo {
-    filter: none;
-    transition: filter 1s;
-}
-
-.company-logo:hover {
-    filter: hue-rotate(304deg) invert(1) saturate(3);
-}
-
 #company-year {
     font-size: 20px;
 }
