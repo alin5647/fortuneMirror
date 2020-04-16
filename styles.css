@@ -151,7 +151,7 @@ body {
     width: auto;
 }
 
-.card:hover img {
+.category-panel .card:hover img {
     box-shadow: 5px 3px 10px white;
 }
 
@@ -271,9 +271,21 @@ body {
     padding-top: 12vh;
     display: inline-block;
 }
-.card {
+.product-body .card {
     background-color: #5a5a5a;
     width: 27vh;
+    transition: box-shadow 0.3s;
+    
+}
+
+.product-body .card:hover {
+    box-shadow: 5px 3px 10px white;
+}
+
+.product-body .card img{
+    display: block;
+    height: 24vh;
+    width: auto;
 }
 
 /* Product Detail CSS */
