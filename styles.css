@@ -121,6 +121,7 @@ body {
 .category-panel .card img {
     background: linear-gradient(0deg, rgba(10,11,27,1) 0%, rgba(255,255,255,1) 0%, rgba(82,82,82,1) 100%);
     border-radius: 8px;
+    transition: box-shadow 0.3s;
 }
 
 .card-body {
@@ -142,7 +143,6 @@ body {
 }
 
 .card {
-    transition: box-shadow 0.3s;
     border-radius: 8px;
 }
 
@@ -151,8 +151,8 @@ body {
     width: auto;
 }
 
-.card:hover {
-    box-shadow: 5px 5px 30px white;
+.card:hover img {
+    box-shadow: 5px 3px 10px white;
 }
 
 
