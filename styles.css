@@ -275,7 +275,7 @@ body {
     background-color: #5a5a5a;
     width: 27vh;
     transition: box-shadow 0.3s;
-    
+    cursor: pointer;
 }
 
 .product-body .card:hover {
