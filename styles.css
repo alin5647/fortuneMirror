@@ -353,6 +353,7 @@ body {
 
 .otherImgs {
     border: solid rgb(223, 223, 223) 1px;
+    cursor: pointer;
 }
 
 .detail-section {
