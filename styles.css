@@ -20,7 +20,8 @@ body {
 }
 
 .top-nav {
-    min-height: 12vh;
+    height: 12vh;
+    max-height: 12vh;
 }
 
 .banner {
@@ -66,7 +67,6 @@ body {
 
 .regLogo {
     font-size: 16px;
-    height: 100%;
     color: green;
 }
 
