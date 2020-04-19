@@ -333,18 +333,19 @@ body {
 }
 
 .expandedImg-container {
-    height: 45vh;
+    height: 53vh;
 }
 
 .expandedImg-container img {
     width: 100%;
     height: auto;
-    max-height: 45vh;
+    max-height: 53vh;
 }
 
 .otherImg-container {
-    height: 30vh;
     position: relative;
+    height: 30vh;
+    align-items: center;
 }
 
 .otherImg-container .row {
