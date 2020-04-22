@@ -63,15 +63,27 @@ body {
 .navbar-brand {
     font-family: 'Arial', sans-serif;;
     font-size: 45px;
+    max-height: 12vh;
+}
+
+.leftMainNav {
+    justify-content: center;
+}
+
+.company-logo {
+    align-self: center;
+    width: auto;
+    max-height: 11.5vh;
 }
 
 .regLogo {
-    font-size: 16px;
+    font-size: 1.5vh;
     color: green;
 }
 
 #company-name {
     color: black;
+    font-size: 5.5vh;
 }
 
 #contact-link {
@@ -298,15 +310,11 @@ body {
 }
 
 .detail-wrapper {
-    height: 90vh;
+    height: 88vh;
 }
 
 .detail-wrapper .col-5 {
     border-right: 1px solid rgb(223, 223, 223);
-}
-
-.gallery {
-    height: 90vh;
 }
 
 .back-to-product {
@@ -339,9 +347,9 @@ body {
 .expandedImg-container img {
     width: 100%;
     height: auto;
-    max-height: 53vh;
+    max-height: 52.5vh;
 }
-
+                        
 .otherImg-container {
     position: relative;
     height: 30vh;
