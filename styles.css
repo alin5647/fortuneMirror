@@ -168,6 +168,47 @@ body {
 }
 
 
+/* About Us Page CSS */
+.about-page .content-wrapper {
+    height: 88vh;
+}
+
+.about-text .about-header{
+    font-size: 6vh;
+    height: 13vh;
+}
+
+.about-text p {
+    font-size: 2.3vh;
+}
+
+.company-info {
+    background-color: rgba(0, 0, 0, 0.822);
+    height: 88vh;
+    border-left: 1px white solid;
+}
+
+.company-info a:hover {
+    text-decoration: none;
+}
+
+.about-contact {
+    font-size: 3.5vh;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-contact-info {
+    font-size: 2.0vh;
+}
+
+.get-back {
+    position: relative;
+    font-size: 2.0vh;
+}
+
 /* Product Page CSS */
 .product-body {
     position: relative;
