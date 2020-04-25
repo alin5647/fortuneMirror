@@ -128,7 +128,7 @@ Click the editing window first, then press **CTRL + F**. This will open up a fin
 
 *Other than the product gallery page*, all pictures should only be used once and therefore will be the code you will need to change.
 
-<details><summary>If it is a product gallery page...</summary>
+<details><summary>If it is a product gallery page...(Click to open)</summary>
 
 In the product gallery pages, the first image will be repeated to be initially shown on the expanded image. In the code, it'll look like this:
 
