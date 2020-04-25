@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://alin5647.github.com/fmaward/index.html">
+  <a href="https://alin5647.github.io/fortuneMirror/index.html">
     <img src="https://raw.githubusercontent.com/alin5647/fortuneMirror/master/img/greenLogoTransp.png" alt="Fortune Mirror logo" width="80" height="70">
   </a>
 </p>
