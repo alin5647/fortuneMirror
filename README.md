@@ -33,6 +33,8 @@ Third Layer - product-name.html
 
 When opening up the github repository (the main page of github) you will notice there are folders for each main category (awards/crescents/etc...).
 
+![Root Directory](img/READMEImgs/rootDirectory.png)
+
 The img folder is dedicated to images only. We'll get back to this.
 
 There are also three html files:
@@ -47,6 +49,8 @@ This first "layer" of files is considered the **root**.
 The second layer of files is the content inside each folder in the root such as the content inside the awards folder or crescents folder.
 
 Inside each second layer folder will be a HTML file for each of the products inside that main category.
+
+![Category Directory](img/READMEImgs/mainCategoryDirectory.png)
 
 The img folder in the root is structured as such:
 
@@ -100,6 +104,8 @@ Now that we know which folder the URL is located in. We can go to the [github re
 
 To find which line in the HTML file you'll need to edit, the easiest way is to go to the website page, **right click** on the image you want to change, and then on the very bottom of the menu select **Inspect**. 
 
+![Finding Inspect](img/READMEImgs/inspectButton.png)
+
 It'll open a window called DevTools and highlight the line of code that you'll need to change. The line of code should look:
 
 ```html
@@ -109,6 +115,8 @@ It'll open a window called DevTools and highlight the line of code that you'll n
 **Double click** on the underlined link inside `src="copy-this"`. This should highlight the link. Right click the link, and copy it. In this example, we would've copied:
 
 `../img/awards/cantebury/diamond/diamond.jpg`
+
+![Copy Link](img/READMEImgs/copyImgLink.png)
 
 Now you have the line of code you want to change copied.
 
@@ -170,6 +178,8 @@ We want to upload the new image to the correct folder in the img folder.
 If we wanted to replace an image for the Cantebury - Diamond product. We will want to upload the new image (for example: `jade.jpg`) in the folder: **img > awards > cantebury > diamond**.
 
 Navigate to the folder on github. This example would have us navigate to [this folder](https://github.com/alin5647/fortuneMirror/tree/master/img/awards/cantebury/diamond). Then press **Upload Files**.
+
+![Image Directory](img/READMEImgs/imgDirectoryStructure.png)
 
 Find the image on your computer and make sure the name for the image you want is correct, then upload the image. In the "Commit changes" section add a comment like "New image" to the "Add files via upload" section, or leave it as is. 
 
