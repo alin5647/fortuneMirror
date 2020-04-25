@@ -124,7 +124,7 @@ Now you have the line of code you want to change copied.
 
 Go back to the github page with the HTML. Click on the pencil icon, which will let you edit the HTML file. 
 
-In the editing window, press **CTRL + F**. This will open up a find dialog on top of the window. Paste (right click and press paste OR CTRL + V) the code you copied before, and press enter. This will highlight all instances where this picture is used.
+Click the editing window first, then press **CTRL + F**. This will open up a find dialog on top of the window. Paste (right click and press paste OR CTRL + V) the code you copied before, and press enter. This will highlight all instances where this picture is used.
 
 *Other than the product gallery page*, all pictures should only be used once and therefore will be the code you will need to change.
 
