@@ -9,7 +9,7 @@
 # Table of contents
 
 General Information
-- [Naming + File Organization](#naming-+-file-organization) (must read)
+- [Naming + File Organization](#naming--file-organization) (must read)
 - [Changing images](#changing-images)
 
 First Layer - index.html
