@@ -126,7 +126,7 @@ Go back to the github page with the HTML. Click on the pencil icon, which will l
 
 Click the editing window first, then press **CTRL + F**. This will open up a find dialog on top of the window. Paste (right click and press paste OR CTRL + V) the code you copied before, and press enter. This will highlight all instances where this picture is used.
 
-*Other than the product gallery page*, all pictures should only be used once and therefore will be the code you will need to change.
+*Other than the product gallery page*, all image links should only be used once and therefore will be the only link that will show up.
 
 <details><summary><b>If it is a product gallery page...</b> (Click to open)</summary>
 
@@ -156,7 +156,7 @@ In the product gallery pages, the first image will be repeated to be initially s
     </div>
 </div>
 ```
-In this case, you will want to change src of BOTH image links.
+In this case, you will want to change image link (src) of BOTH image links.
 </details>
 
 
