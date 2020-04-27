@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Arial&family=Roboto:ital,wght@1,700&display=swap');
 
 /* 
-CSS rules to specify familes:
+CSS rule to specify font family:
 font-family: 'Arial', sans-serif;
 */
 
@@ -9,35 +9,47 @@ body {
     position: relative;
 }
 
-.home-page {
-    height: 100vh;
-}
-
 .content-wrapper {
     position: relative;
     top: 12vh;
-    max-height: 88vh;
 }
 
 .top-nav {
     height: 12vh;
     max-height: 12vh;
 }
+@media screen and (min-width: 1400px){
+    .banner {
+        max-height: 55vh;
+        display: flex;
+    }
+    .banner-image img {
+        min-height: 55vh;
+        max-height: 55vh;
+    }
 
-.banner {
-    max-height: 55vh;
+    .banner-text {
+        min-height: 55vh;
+        max-height: 55vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .banner-list {
+        font-family: 'Arial', sans-serif;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner-title {
+        font-size: 3vw;
+        padding-left: 3vw;
+        padding-bottom: 3vh;
+        padding-top: 3vh;
+    }
 }
-
-.banner-image img {
-    max-height: 55vh;
-}
-
-.banner-text {
-    max-height: 55vh;
-}
-
 .category-panel {
-    height: 33vh;
+    min-height: 33vh;
 }
 
 .category-panel .card {
@@ -53,16 +65,15 @@ body {
 }
 
 .nav-link:hover {
-    color: red;
+    color: rgb(0, 255, 0);
 }
 
 .nav-link:active {
-    color: rgb(0, 207, 35);
+    color: rgb(0, 162, 255);
 }
 
 .navbar-brand {
-    font-family: 'Arial', sans-serif;;
-    font-size: 45px;
+    font-family: 'Arial', sans-serif;
     max-height: 12vh;
 }
 
@@ -86,6 +97,12 @@ body {
     font-size: 5.5vh;
 }
 
+@media screen and (max-width: 570px) {
+    #company-name {
+        font-size: 4.5vh;
+    }
+}
+
 #contact-link {
     color: red;
 }
@@ -98,22 +115,12 @@ body {
     color: rgb(0, 162, 255);
 }
 
-#banner-list {
-    font-family: 'Arial', sans-serif;
-    list-style-type: none;
-}
-
-.banner-title {
-    font-size: 5.5vh;
-    padding-left: 3vw;
-}
-
 .banner svg {
     color: white;
     transition: color 0.5s;
 }
 
-.banner li:hover svg{
+.banner .banner-title:hover svg{
     color: rgb(0, 207, 35);
     
 }
@@ -434,3 +441,109 @@ body {
     font-size: 2.0vh;
 }
 
+/* Reponsive Top Nav Bar */
+
+@media screen and (min-width: 1060px) {
+    .rightMainNav #openNavIcon {
+        display: none;
+    }
+    .rightMainNav #closeNavIcon {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    .rightMainNav .navbar-nav {
+        position: absolute;
+        padding-top: 3vh;
+        top: 12vh;
+        right: 0;
+        display: flex;
+        flex-direction: column!important;
+        opacity: 1;
+        background-color: rgb(46, 46, 46, 0.95);
+        height: 88vh;
+        width: 0;
+        transition: 0.3s;
+    }
+
+    .rightMainNav .nav-link {
+        font-size: 3.5vh;
+        padding: 1.5vh 0vh;
+        color: white;
+    }
+
+    .nav-link:hover {
+        color: rgb(0, 255, 0);
+    }
+
+    .nav-link:active {
+        color: rgb(0, 162, 255);
+    }
+
+    .rightMainNav #openNavIcon {
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        right: 4vh;
+        top: 4vh;
+        color: rgb(0, 0, 0);
+    }
+
+    .rightMainNav #closeNavIcon {
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        right: 3.8vh;
+        top: 3.3vh;
+        color: rgb(214, 0, 0);
+        display: none;
+    }
+
+    /* Responsive Home Page */
+    .banner-list {
+        display: flex;
+        flex-direction: column;
+        min-height: 30vh;
+        justify-content: space-evenly!important;
+        align-items: flex-start!important;
+        padding-left: 25vw;
+    }
+
+    .banner-title {
+        font-size: 4vw!important;
+    }
+}
+
+/* Responsive Home Page */
+@media screen and (max-width: 1400px) {
+    .banner-list {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 15vh;
+    }
+    
+    .banner-title {
+        font-size: 3vw;
+        border-bottom: none!important;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .home-page {
+        background-color: black;
+    }
+
+    .banner-list {
+        padding-left: 15vw;
+    }
+
+    .banner-title {
+        font-size: 35px!important;
+    }
+
+    .banner-title svg {
+        width: 35px;
+    }
+}
