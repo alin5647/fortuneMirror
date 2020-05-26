@@ -33,6 +33,7 @@ body {
         max-height: 55vh;
         display: flex;
         align-items: center;
+        font-family: 'Arial', sans-serif;
     }
 
     .banner-list {
