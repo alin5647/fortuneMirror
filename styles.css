@@ -177,7 +177,7 @@ body {
 
 /* About Us Page CSS */
 .about-page .content-wrapper {
-    height: 88vh;
+    min-height: 88vh;
 }
 
 .about-text .about-header{
@@ -192,7 +192,7 @@ body {
 
 .company-info {
     background-color: rgba(0, 0, 0, 0.822);
-    height: 88vh;
+    min-height: 88vh;
     border-left: 1px white solid;
 }
 
@@ -611,5 +611,26 @@ table tr th:first-child {
 
     .product-description {
         font-size: 4vw;
+    }
+}
+
+/* Responsive About Page */
+@media screen and (max-width: 1060px){
+    .about-page .col-9 {
+        min-width: 100vw;
+        padding-bottom: 5vh;
+    }
+
+    .about-page .col-3 {
+        min-width: 100vw;
+        border-left: none;
+        border-top: 1px solid white;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 750px){
+    iframe {
+        height: 50vw;
     }
 }

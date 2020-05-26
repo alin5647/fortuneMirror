@@ -13,6 +13,10 @@
 
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" type="text/scss" href="styles.scss">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="preload" as="image"
         href="https://raw.githubusercontent.com/alin5647/fortuneMirror/master/img/greenLogoTransp.png">
     <!-- Preloads the company logo -->
@@ -39,7 +43,7 @@
     <section class="about-page">
         <a id="home"></a>
         <!--Navigation-->
-        <nav class="navbar top-nav navbar-expand-md bg-light border-bottom border-dark">
+        <nav class="navbar top-nav bg-light border-bottom border-dark d-flex justify-content-between">
             <a class="navbar-brand d-flex" href="index.html">
                 <div class="leftMainNav pr-3 border-right border-dark d-flex flex-column">
                     <img class="company-logo align-top"
@@ -51,27 +55,42 @@
                     <span id="company-name" class="ml-2">Fortune Mirror</span>
                 </div>
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse d-flex justify-content-end mr-3 text-uppercase" id="collapsibleNavId">
-                <ul class="navbar-nav">
-                    <li class="nav-item ">
+            <div class="rightMainNav mr-3 text-uppercase">
+                <label id="openNavIcon" onclick="openNav()">
+                    <i class="fa fa-bars" style="font-size: 4vh;"></i>
+                </label>
+                <label id="closeNavIcon" onclick="closeNav()">
+                    <i class="fa fa-times" style="font-size: 5vh;"></i>
+                </label>
+                <ul class="navbar-nav d-flex flex-row" id="mobileSideBar">
+                    <li class="nav-item ml-4">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
-                    <li class="nav-item ml-3">
+                    <li class="nav-item ml-4">
                         <a class="nav-link" href="products.html">Products</a>
                     </li>
-                    <li class="nav-item ml-3 active">
+                    <li class="nav-item ml-4 active">
                         <a class="nav-link active" href="about.html">About Us</a>
                     </li>
-                    <li class="nav-item ml-3">
+                    <li class="nav-item mx-4">
                         <a class="nav-link" id="contact-link"
                             href="mailto:msichyi@yahoo.com?subject=Product Inquiry">Contact Us</a>
                     </li>
                 </ul>
             </div>
+
+            <script>
+                function openNav() {
+                    document.getElementById("mobileSideBar").style.width = "400px";
+                    document.getElementById("openNavIcon").style.display = "none";
+                    document.getElementById("closeNavIcon").style.display = "inline";
+                }
+                function closeNav() {
+                    document.getElementById("mobileSideBar").style.width = "0vw";
+                    document.getElementById("openNavIcon").style.display = "inline";
+                    document.getElementById("closeNavIcon").style.display = "none";
+                }
+            </script>
         </nav>
 
         <div class="content-wrapper bg-dark text-white">
