@@ -519,11 +519,11 @@ table tr th:first-child {
     }
 
     .banner-title {
-        font-size: 35px!important;
+        font-size: 32px!important;
     }
 
     .banner-title svg {
-        width: 35px;
+        width: 32px;
     }
 }
 
