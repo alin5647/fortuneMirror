@@ -11,8 +11,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" href="../styles.css">
-    <link rel="stylesheet" type="text/scss" href="styles.scss">
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="preload" as="image"
         href="https://raw.githubusercontent.com/alin5647/fortuneMirror/master/img/greenLogoTransp.png">
     <!-- Preloads the company logo -->
@@ -51,12 +54,12 @@
         crossorigin="anonymous"></script>
 
     <section class="product-detail-page">
-        <!-- Navigation -->
-        <nav class="navbar top-nav navbar-expand-md bg-light border-bottom border-dark">
-            <a class="navbar-brand d-flex" href="../index.html">
+        <!--Navigation-->
+        <nav class="navbar top-nav bg-light border-bottom border-dark d-flex justify-content-between">
+            <a class="navbar-brand d-flex" href="index.html">
                 <div class="leftMainNav pr-3 border-right border-dark d-flex flex-column">
                     <img class="company-logo align-top"
-                        src="https://raw.githubusercontent.com/alin5647/fortuneMirror/master/img/greenLogoTransp.png" 
+                        src="https://raw.githubusercontent.com/alin5647/fortuneMirror/master/img/greenLogoTransp.png"
                         alt="Fortune Mirror logo">
                     <div class="regLogo"><span class="company-year">Since 1978</span> &reg;</div>
                 </div>
@@ -64,27 +67,42 @@
                     <span id="company-name" class="ml-2">Fortune Mirror</span>
                 </div>
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse d-flex justify-content-end mr-3 text-uppercase" id="collapsibleNavId">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Home</a>
+            <div class="rightMainNav mr-3 text-uppercase">
+                <label id="openNavIcon" onclick="openNav()">
+                    <i class="fa fa-bars" style="font-size: 4vh;"></i>
+                </label>
+                <label id="closeNavIcon" onclick="closeNav()">
+                    <i class="fa fa-times" style="font-size: 5vh;"></i>
+                </label>
+                <ul class="navbar-nav d-flex flex-row" id="mobileSideBar">
+                    <li class="nav-item ml-4">
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
-                    <li class="nav-item ml-3 active">
-                        <a class="nav-link active" href="../product.html">Products</a>
+                    <li class="nav-item ml-4 active">
+                        <a class="nav-link active" href="products.html">Products</a>
                     </li>
-                    <li class="nav-item ml-3">
-                        <a class="nav-link" href="../about.html">About Us</a>
+                    <li class="nav-item ml-4">
+                        <a class="nav-link" href="about.html">About Us</a>
                     </li>
-                    <li class="nav-item ml-3">
+                    <li class="nav-item mx-4">
                         <a class="nav-link" id="contact-link"
                             href="mailto:msichyi@yahoo.com?subject=Product Inquiry">Contact Us</a>
                     </li>
                 </ul>
             </div>
+
+            <script>
+                function openNav() {
+                    document.getElementById("mobileSideBar").style.width = "400px";
+                    document.getElementById("openNavIcon").style.display = "none";
+                    document.getElementById("closeNavIcon").style.display = "inline";
+                }
+                function closeNav() {
+                    document.getElementById("mobileSideBar").style.width = "0vw";
+                    document.getElementById("openNavIcon").style.display = "inline";
+                    document.getElementById("closeNavIcon").style.display = "none";
+                }
+            </script>
         </nav>
 
         <!-- Detail Page Body -->
@@ -105,48 +123,47 @@
                                 <div
                                     class="container-fluid expandedImg-container d-flex flex-column justify-content-center px-0 border-bottom">
                                     <!-- Expanded image -->
-                                    <img id="expandedImg"
-                                        src="../img/awards/cantebury/diamond/diamond.jpg">
+                                    <img id="expandedImg" src="/img/awards/cantebury/diamond/diamond.jpg">
                                 </div>
 
                                 <!-- The grid: four columns -->
                                 <div class="container-fluid otherImg-container d-flex justify-content-center py-3 px-0">
-                                    <div class="row px-2">
-                                        <div class="col-2">
-                                            <img src="../img/awards/cantebury/diamond/diamond.jpg"
-                                                alt="Product" class="otherImgs img-fluid" onclick="myFunction(this);">
+                                    <div class="row row-cols-xl-6 row-cols-lg-4 row-cols-md-3 px-2">
+                                        <div class="col">
+                                            <img src="/img/awards/cantebury/diamond/diamond.jpg" alt="Product"
+                                                class="otherImgs img-fluid" onclick="myFunction(this);">
                                         </div>
-                                        <div class="col-2">
-                                            <img src="../img/awards/cantebury/diamond/diamond.jpg"
-                                                alt="Sizes" class="otherImgs img-fluid" onclick="myFunction(this);">
+                                        <div class="col">
+                                            <img src="/img/awards/cantebury/diamond/diamond.jpg" alt="Sizes"
+                                                class="otherImgs img-fluid" onclick="myFunction(this);">
                                         </div>
-                                        <div class="col-2">
-                                            <img src="../img/awards/cantebury/diamond/diamond.jpg"
-                                                alt="Packaging" class="otherImgs img-fluid" onclick="myFunction(this);">
+                                        <div class="col">
+                                            <img src="/img/awards/cantebury/diamond/diamond.jpg" alt="Packaging"
+                                                class="otherImgs img-fluid" onclick="myFunction(this);">
                                         </div>
-                                        <div class="col-2">
-                                            <img src="../img/awards/cantebury/diamond/diamond.jpg"
-                                                alt="Packaging" class="otherImgs img-fluid" onclick="myFunction(this);">
+                                        <div class="col">
+                                            <img src="/img/awards/cantebury/diamond/diamond.jpg" alt="Packaging"
+                                                class="otherImgs img-fluid" onclick="myFunction(this);">
                                         </div>
-                                        <div class="col-2">
-                                            <img src="../img/awards/cantebury/diamond/diamond.jpg"
-                                                alt="Packaging" class="otherImgs img-fluid" onclick="myFunction(this);">
+                                        <div class="col">
+                                            <img src="/img/awards/cantebury/diamond/diamond.jpg" alt="Packaging"
+                                                class="otherImgs img-fluid" onclick="myFunction(this);">
                                         </div>
-                                        <div class="col-2">
-                                            <img src="../img/awards/cantebury/diamond/diamond.jpg"
-                                                alt="Packaging" class="otherImgs img-fluid" onclick="myFunction(this);">
+                                        <div class="col">
+                                            <img src="/img/awards/cantebury/diamond/diamond.jpg" alt="Packaging"
+                                                class="otherImgs img-fluid" onclick="myFunction(this);">
                                         </div>
-                                        <div class="col-2">
-                                            <img src="../img/awards/cantebury/diamond/diamond.jpg"
-                                                alt="Packaging" class="otherImgs img-fluid" onclick="myFunction(this);">
+                                        <div class="col">
+                                            <img src="/img/awards/cantebury/diamond/diamond.jpg" alt="Packaging"
+                                                class="otherImgs img-fluid" onclick="myFunction(this);">
                                         </div>
-                                        <div class="col-2">
-                                            <img src="../img/awards/cantebury/diamond/diamond.jpg"
-                                                alt="Packaging" class="otherImgs img-fluid" onclick="myFunction(this);">
+                                        <div class="col">
+                                            <img src="/img/awards/cantebury/diamond/diamond.jpg" alt="Packaging"
+                                                class="otherImgs img-fluid" onclick="myFunction(this);">
                                         </div>
-                                        <div class="col-2">
-                                            <img src="../img/awards/cantebury/diamond/packaging.jpg"
-                                                alt="Packaging" class="otherImgs img-fluid" onclick="myFunction(this);">
+                                        <div class="col">
+                                            <img src="/img/awards/cantebury/diamond/packaging.jpg" alt="Packaging"
+                                                class="otherImgs img-fluid" onclick="myFunction(this);">
                                         </div>
                                     </div>
                                 </div>
@@ -163,7 +180,8 @@
                                 </div>
                                 <div class="product-description text-justify">
                                     <p>
-                                        Standing diamond award, Crystal clear, Sturdy pin, Beveled edge, Gift Boxed, Imported
+                                        Standing diamond award, Crystal clear, Sturdy pin, Beveled edge, Gift Boxed,
+                                        Imported
                                     </p>
                                 </div>
                             </section>
