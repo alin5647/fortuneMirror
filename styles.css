@@ -27,7 +27,6 @@ body {
 
     .banner-text {
         min-height: 55vh;
-        max-height: 55vh;
         display: flex;
         align-items: center;
     
@@ -495,6 +494,9 @@ table tr th:first-child {
 
 /* Responsive Home Page */
 @media screen and (max-width: 1400px) {
+    .banner {
+        height: auto;
+    }
     .banner-list {
         display: flex;
         justify-content: space-evenly;
