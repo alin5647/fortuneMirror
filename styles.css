@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
+/* test 8:19 */
 
 body {
     position: relative;
@@ -505,7 +506,6 @@ table tr th:first-child {
     }
     
     .banner-title {
-    
         font-size: 3vw;
         border-bottom: none!important;
     }
