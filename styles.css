@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-/* test 8:19 */
+/* test 8:22 */
 
 body {
     position: relative;
@@ -512,8 +512,15 @@ table tr th:first-child {
 }
 
 @media screen and (max-width: 980px) {
+    .banner {
+        height: auto;
+    }
     .home-page {
         background-color: black;
+    }
+
+    .banner-text {
+        height: auto;
     }
 
     .banner-list {
@@ -521,7 +528,6 @@ table tr th:first-child {
     }
 
     .banner-title {
-    
         font-size: 32px!important;
     }
 
