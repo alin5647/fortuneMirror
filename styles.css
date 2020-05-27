@@ -488,8 +488,7 @@ table tr th:first-child {
     }
 
     .banner-title {
-    
-        font-size: 4vw!important;
+        font-size: 4vw;
     }
 }
 
@@ -528,7 +527,7 @@ table tr th:first-child {
     }
 
     .banner-title {
-        font-size: 32px!important;
+        font-size: 4vh;
     }
 
     .banner-title svg {
